@@ -1,0 +1,43 @@
+﻿@model CreateServiceDto
+@{
+    ViewData["Title"] = "CreateService";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Hizmet Bilgisi Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Ana sayfanın ve Hizmetler bölümünde yer alan hizmet listesinin admin tarafındaki işlemlerini aşağıdaki sayfadan gerçekleştirebilirsiniz. Tema bütünlüğünü korumak adına 4 adet hizmet giriniz.
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="Title">Hizmet Başlığı</label>
+                                <input type="text" class="form-control" id="Title" asp-for="Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="Description">Hizmet Açıklaması</label>
+                                <input type="text" class="form-control" id="Description" asp-for="Description">
+                            </div>
+                            <div class="form-group">
+                                <label for="IconUrl">Hizmet Icon Url</label>
+                                <input type="text" class="form-control" id="IconUrl" asp-for="IconUrl">
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary waves-effect waves-light">Hizmet Bilgisini Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
